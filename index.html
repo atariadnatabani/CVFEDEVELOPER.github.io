@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CVFEDEVELOPER">
+    <title>CVFEDEVELOPER</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon-32x32.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/35977468a2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav><!--navegador central-->
+    <div class="checkbtn">
+            <button class="iconmenu">
+                 <div class="line"></div>
+                 <div class="line"></div>
+                <div class="line"></div>
+            </button> 
+    </div>
+        <label class="logo">AT</label>
+            <ul class="menu">
+                <li><a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="#cv"></i><i class="fa-solid fa-file-code"></i>CV</a></li>
+                <li><a href="#portafolio"><i class="fa-solid fa-suitcase"></i>Portafolio</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-envelope-open-text"></i>Contacto</a></li>
+            </ul>
+    </nav>        
+<main class="main">
+    <div id="inicio">
+    <center><img src="./imagenes/atprincipal.jpg" alt="atprincipal" id="atprincipal"></center>
+    </div>
+    </main>
+
+    <!--Sobre mi-->
+    <section id="cv">
+         <div id="skills">
+            <div class="contenedorh">
+                <div class="leftcol">
+                    <h1 class="titulocv">Programadora Front End</h1>
+                    <br>
+                    <p>Freelancer</p>
+                    <br>
+                    <p>Estas son mis habilidades</p>
+                </div>
+                <div class="right">
+                    <div class="Skill_bar">
+                        <div id="html">
+                            <span class="skillarea">HTML</span>
+                            <span class="porcentaje">95%</span>
+                        </div>
+                    </div>
+                    <div class="Skill_bar">
+                        <div id="css">
+                            <span class="skillarea">CSS</span>
+                            <span class="porcentaje">85%</span>
+                        </div>
+                    </div>
+                    <div class="Skill_bar">
+                        <div id="js">
+                            <span class="skillarea">JavaScript</span>
+                            <span class="porcentaje">75%</span>
+                        </div>
+                    </div> 
+                    <br>
+                    <br> 
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!--Tarjetas-->
+    <section class="card"> 
+        <div class="container" id="portafolio"> 
+            <div class="cardnombre">
+                <img src="./fotocards/uno.jpg" alt="Proyecto Alpha" width="300px" height="300px">
+                <h3>Proyecto Alpha</h3>
+            </div>
+            <hr>
+            <div class="cardcontenido">
+                <p>Diseño Web Creativo</p>
+            </div>
+            <hr>
+            <div class="cardbutton">
+                <a class="enlace1" href="proyectos.html" target="_blank">Ver mas</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cardnombre">
+                <img src="./fotocards/dos.jpg" alt="Proyecto Nu" width="300px" height="300px">
+                <h3>Proyecto Nu</h3>
+            </div>
+            <hr>
+            <div class="cardcontenido">
+                <p>Diseño Web Creativo</p>
+            </div>
+            <hr>
+            <div class="cardbutton">
+                <a class="enlace1" href="proyectos.html" target="_blank">Ver mas</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cardnombre">
+                <img src="./fotocards/tres.jpg" alt="Proyecto Tau" width="300px" height="300px">
+                <h3>Proyecto Tau</h3>
+            </div>
+            <hr>
+            <div class="cardcontenido">
+                <p>Diseño Web Creativo</p>
+            </div>
+            <hr>
+            <div class="cardbutton">
+                <a class="enlace1" href="proyectos.html" target="_blank">Ver mas</a>
+            </div>
+        </div>
+
+    </section>
+
+<!--FORMULARIO DE CONTACTO-->
+        <section class="form_wrapp">
+            <section class="contact_info">
+                <section class="info_title">
+                    <span class="fa-solid fa-circle-user""></span>
+                    <h2 id="contacto">INFORMACIÓN <br>DE CONTACTO</h2>
+                </section>
+                <section class="info_items">
+                    <p><span class="fa fa-envelope"></span>info.at@example.com</p>
+                    <p><span class="fa fa-mobile"></span>+54 9 342 1111111</p>
+                </section>
+            </section>
+
+            <form action="" method="post" class="form_contact">
+                <h2>CONSULTAS</h2>
+                <div class="user_info">
+
+                     <label for="name" id="lbl">Apellido y Nombre*</label>
+                     <input type="text" class="input" id="nombre" placeholder="" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Escriba su nombre y apellido, por favor" required>
+
+                     <label for="telefono" id="lbl">Telefono/Celular</label>
+                     <input type="tel" id="phone" title="Escriba su número de telefono/celular, por favor" required>
+
+                     <label for="email" id="lbl">Email*</label>
+                     <input type="email" name="email" id="email" class="input" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Escriba un email valido, por favor" required>
+
+                     <label for="mensaje" id="mensaje">Mensaje</label>
+                     <textarea id="mensaje"></textarea>
+
+                     <input type="button" value="Enviar Mensaje" id="btnsend">
+                </div>
+            </form>
+
+        </section>
+
+<footer>
+     <ul class="socialmedia">
+        <li><a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+        <li><a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+        <li><a href="http://youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a></li>
+        <li><a href="http://www.whatsapp.com" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            
+    </ul>
+    <div class="footercopyright">
+         <p>AT Copyright© 2023. Todos los derechos reservados. </p>
+     </div>
+</footer>
+
+    <script src="javascript.js"></script> 
+</body>
+
+</html>
